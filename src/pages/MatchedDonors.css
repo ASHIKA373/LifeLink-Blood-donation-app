@@ -1,0 +1,96 @@
+.matched-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.back-link {
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+.back-link:hover { background: #f1f5f9; }
+
+.request-summary { margin-bottom: 0; }
+
+.summary-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.blood-group-badge.lg {
+  font-size: 1.1rem;
+  padding: 6px 14px;
+  border-radius: 8px;
+  min-width: 52px;
+}
+
+.summary-info { flex: 1; }
+.summary-info h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; }
+.summary-info p  { font-size: 0.875rem; color: #64748b; margin-bottom: 2px; }
+
+.summary-badges { display: flex; flex-direction: column; gap: 4px; align-items: flex-end; }
+.summary-time   { font-size: 0.8rem; color: #94a3b8; }
+
+.donor-response-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.response-prompt { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.75rem; color: #334155; }
+
+.response-buttons { display: flex; gap: 0.75rem; }
+
+.response-status {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.response-status.accepted { background: #dcfce7; color: #16a34a; }
+.response-status.declined { background: #f1f5f9; color: #64748b; }
+
+.section-title { font-size: 1rem; font-weight: 700; margin-bottom: 1rem; }
+
+.no-donors {
+  text-align: center;
+  padding: 2rem;
+  color: #64748b;
+}
+.no-donors p { margin-bottom: 0.5rem; }
+
+.donors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.donor-card {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: border-color 0.15s;
+}
+.donor-card.accepted { border-color: #86efac; background: #f0fdf4; }
+.donor-card.declined { border-color: #e2e8f0; background: #f8fafc; opacity: 0.7; }
+
+.donor-card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; }
+.donor-name { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; color: #0f172a; }
+
+.donor-details {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.distance { color: #2563eb; font-weight: 500; }

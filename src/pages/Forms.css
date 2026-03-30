@@ -1,0 +1,54 @@
+.form-card { max-width: 800px; }
+
+.field-hint { font-size: 0.78rem; color: #94a3b8; }
+
+.toggle-section {
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.toggle-label { font-weight: 600; font-size: 0.9rem; display: block; }
+.toggle-desc  { font-size: 0.78rem; color: #64748b; }
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.urgency-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+@media (max-width: 700px) { .urgency-grid { grid-template-columns: 1fr 1fr; } }
+
+.urgency-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 0.85rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  text-align: left;
+}
+
+.urgency-label { font-weight: 600; font-size: 0.875rem; }
+.urgency-desc  { font-size: 0.75rem; color: #64748b; }
+
+.urgency-card.selected.urgency-critical { border-color: #dc2626; background: #fee2e2; }
+.urgency-card.selected.urgency-high     { border-color: #ea580c; background: #ffedd5; }
+.urgency-card.selected.urgency-medium   { border-color: #ca8a04; background: #fef9c3; }
+.urgency-card.selected.urgency-low      { border-color: #16a34a; background: #dcfce7; }
+.urgency-card:not(.selected):hover      { border-color: #94a3b8; background: #f8fafc; }
